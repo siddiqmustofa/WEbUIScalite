@@ -1,0 +1,205 @@
+/* ==========================
+   Font & Global Styles
+========================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #eceff4, #dfe6e9);
+}
+
+/* ==========================
+   Login Page
+========================== */
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-card h2 {
+  margin-bottom: 20px;
+  color: #2d3436;
+}
+
+.login-form {
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #b2bec3;
+  border-radius: 8px;
+  font-size: 15px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #0984e3;
+}
+
+.btn-login {
+  width: 100%;
+  padding: 12px;
+  background: #0984e3;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-login:hover {
+  background: #74b9ff;
+}
+
+.error-box {
+  background: #ffe6e6;
+  color: #d63031;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.forgot {
+  margin-top: 12px;
+}
+
+.forgot a {
+  font-size: 14px;
+  color: #0984e3;
+  text-decoration: none;
+}
+
+.forgot a:hover {
+  text-decoration: underline;
+}
+
+/* ==========================
+   Dashboard Layout
+========================== */
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 220px;
+  background: #2d3436;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar h3 {
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.sidebar nav a {
+  display: block;
+  color: #dfe6e9;
+  text-decoration: none;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+  background: #636e72;
+}
+
+.content {
+  flex: 1;
+  padding: 30px;
+  background: #f5f6fa;
+}
+
+.content h2 {
+  margin-bottom: 20px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+th {
+  font-weight: bold;
+  color: #2d3436;
+}
+
+/* ==========================
+   Buttons & Status
+========================== */
+button,
+.btn-danger {
+  background: #0984e3;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 5px;
+  transition: background 0.3s ease;
+}
+
+.btn-danger {
+  background-color: #d63031;
+  padding: 8px 12px;
+}
+
+.btn-danger:hover {
+  background-color: #ff7675;
+}
+
+.status-online {
+  color: green;
+  font-weight: bold;
+}
+
+.status-offline {
+  color: red;
+  font-weight: bold;
+}
