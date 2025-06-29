@@ -2,7 +2,7 @@
 session_start();
 $error = '';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    if ($_POST['username'] === 'admin' && $_POST['password'] === 'Kucing123!') {
+    if ($_POST['username'] === 'admin' && $_POST['password'] === 'asd!') {
         $_SESSION['logged_in'] = true;
         header('Location: dashboard.php');
         exit;
