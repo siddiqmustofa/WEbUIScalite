@@ -6,17 +6,17 @@ if (!isset($_SESSION['logged_in'])) {
 }
 
 $scalelite_url = "https://scalelite.box.web.id/bigbluebutton/api";
-$secret = "a629fd7b283c0cd734a5ea00b522ddcd53f798fa57f07954";
+$secret = "asd";
 $db = new PDO('sqlite:db.sqlite');
 
 $bbb_servers = [
     'telco1' => [
         'url' => 'https://telco.satkomlek.id/bigbluebutton/api',
-        'secret' => 'wR5H1O5Z4iQsqAC6Yb7enmzu5EUGIEWPNmI68Qckk',
+        'secret' => 'asd',
     ],
     'telco2' => [
         'url' => 'https://telco2.satkomlek.id/bigbluebutton/api',
-        'secret' => 'IaYIvfQqnlt3ODGukuvTySqkRI2AHiJe31aKqHRok',
+        'secret' => 'asd',
     ],
     'bbb' => [
         'url' => 'https://bbb.box.web.id/bigbluebutton/api/',
