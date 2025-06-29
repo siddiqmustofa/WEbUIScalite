@@ -20,7 +20,7 @@ $bbb_servers = [
     ],
     'bbb' => [
         'url' => 'https://bbb.box.web.id/bigbluebutton/api/',
-        'secret' => 'aHW8UfUOCTdGaNepH0RL3PT6PiOWMVjl2RKBm7CR80M',
+        'secret' => 'asd',
     ]
 ];
 
